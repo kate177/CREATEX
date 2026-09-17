@@ -103,6 +103,7 @@ body{
 .menu-contact__info{
    display: grid;
    margin-left: 12px;
+   width: 131px;
 }
 
 .menu-contact__text{
@@ -193,6 +194,7 @@ body{
    margin-bottom: 60px;
 }
 .main-button__info {
+   display: inline-block;
    border: 1px solid #ffff;
    border-radius: 4px;
    padding: 16px 40px;
@@ -204,11 +206,13 @@ body{
 }
 
 .main-button__info:hover {
-   border: 3px solid #FF5A30;
+   transform: scale(1.07);
    color: #FF5A30;
+   border-color: #FF5A30;
 }
 
 .general-button__link {
+   display: inline-block;
    background-color: #FF5A30;
    color: #ffff;
    padding: 17px 40px;
@@ -223,10 +227,7 @@ body{
 .general-button__link:hover{
    background-color: #ffff;
    color: #FF5A30;
-   padding: 19px 42px;
-   -webkit-box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
-   -moz-box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
-   box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
+   transform: scale(1.07);
 }
 
 .inf {
@@ -248,10 +249,15 @@ body{
    text-align: center;
    font-size: 18px;
    color: #787A80;
+   margin-bottom: 60px;
 }
 .inf-img {
-   margin-top: 60px;
-   width: 100%;
+   margin: 0 auto;
+   max-width: 1230px;
+   height: 500px;
+   background: url(img/video.jpg) no-repeat center center;
+   background-attachment: fixed;
+   background-size: cover;
 }
 .inf-values {
    margin-top: 80px;
@@ -297,11 +303,7 @@ body{
 }
 
 .services-list__item:hover {
-   width: 300px;
-   height: 300px;
-   -webkit-box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
-   -moz-box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
-   box-shadow: 0px 0px 9px 2px rgba(131, 132, 138, 0.28);
+   transform: scale(1.08);
 }
 
 .srvices-list__link {
@@ -347,12 +349,11 @@ body{
    -webkit-box-shadow: 11px 11px 10px 2px rgba(154, 156, 165, 0.21);
    -moz-box-shadow: 11px 11px 10px 2px rgba(154, 156, 165, 0.21);
    box-shadow: 11px 11px 10px 2px rgba(154, 156, 165, 0.21);
-transition: all 500ms ease;
+   transition: all 500ms ease;
 }
 
-.project-list__item:hover{
-   width: 410px;
-   transform: translateY(-20px)
+.project-list__item:hover {
+   transform: scale(1.06) translateY(-20px);
 }
 
 .project-list__link {
@@ -485,7 +486,9 @@ transition: all 500ms ease;
    -moz-box-shadow: 5px 5px 10px 2px rgba(154, 156, 165, 0.21);
    box-shadow: 5px 5px 10px 5px rgba(154, 156, 165, 0.21);
 }
-
+.news-inner__item:hover .news-inner__title{
+    color: #FF5A30;
+}
 .news-inner__img{
    width: 100%;
 }
@@ -498,9 +501,7 @@ transition: all 500ms ease;
    transition: all 500ms ease;
    line-height: 150%;
 }
-.news-inner__title:hover{
-   color: #FF5A30;
-}
+
 .news-inner__comment {
    margin-left: 12px;
    display: flex;
@@ -544,7 +545,9 @@ transition: all 500ms ease;
    box-shadow: 5px 5px 10px 5px rgba(154, 156, 165, 0.21);
    padding-bottom: 24px;
 }
-
+.news-inners__items:hover .news-inners__title{
+   color: #FF5A30;
+}
 
 .news-inners__items + .news-inners__items{
    margin-top: 30px;
@@ -557,10 +560,6 @@ transition: all 500ms ease;
    margin: 16px 0px 8px 24px;
    transition: all 500ms ease;
    line-height: 150%;
-}
-
-.news-inners__title:hover{
-   color: #FF5A30;
 }
 
 .registration {
@@ -638,6 +637,7 @@ transition: all 500ms ease;
    border-radius: 4px;
    text-transform: uppercase;
    margin: 0 auto;
+   transition: all 0.3s ease;
 } 
 
 .form-button:hover{
@@ -667,7 +667,18 @@ transition: all 500ms ease;
 .top-menu__logo {
    margin-right: 60px;
 }
-
+.top-menu__link{
+   display: inline-block;
+}
+.top-menu__link:hover{
+   transform: scale(1.07);
+}
+.top-menu__links{
+   display: inline-block;
+}
+.top-menu__links:hover{
+   transform: scale(1.35);
+}
 .top-menu__message + .top-menu__message {
    margin-left: 16px;
 }
@@ -747,6 +758,9 @@ transition: all 500ms ease;
 .average-list__link {
    line-height: 160%;
    color: #A5A6AB;
+}
+.average-list__link:hover{
+   color: #FF5A30;
 }
 .botttom {
    display: flex;
@@ -1098,6 +1112,9 @@ transition: all 500ms ease;
    }
    .main-buttons {
       width: 90%;
+   }
+   .inf-img{
+      height: 400px;
    }
    .general-title {
       font-size: 32px;
